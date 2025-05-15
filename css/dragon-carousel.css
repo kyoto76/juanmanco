@@ -1,0 +1,150 @@
+/* Estilos optimizados para el carrusel de dragones */
+.dragon-section {
+  background-color: #d2d2d2;
+  background-image: repeating-linear-gradient(to right, transparent 0 100px, #0d26c622 100px 101px),
+    repeating-linear-gradient(to bottom, transparent 0 100px, #d8101022 100px 101px);
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.bannert {
+  width: 100%;
+  min-height: 80vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.bannert .slidert {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.bannert .slidert .itemt {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
+}
+
+.bannert .slidert .itemt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bannert .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.bannert .content h1 {
+  font-family: "ICA Rubrik", sans-serif;
+  font-size: clamp(5em, 16vw, 16em);
+  line-height: 1em;
+  color: #25283b;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bannert .content h1::after {
+  position: absolute;
+  inset: 0 0 0 0;
+  content: attr(data-content);
+  z-index: 2;
+  -webkit-text-stroke: 2px #d2d2d2;
+  color: transparent;
+}
+
+.bannert .content .author {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #25283b;
+  padding: 0 20px;
+}
+
+.bannert .content h2 {
+  font-size: clamp(1.5em, 4vw, 3em);
+  margin-bottom: 10px;
+}
+
+.bannert .content .author p {
+  font-size: clamp(1em, 2vw, 1.2em);
+  margin-bottom: 10px;
+}
+
+.bannert .content .modelt {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  .bannert .slidert {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+  .bannert .slidert .itemt {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+  }
+  .bannert .content h1 {
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .bannert .content .author {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bannert {
+    min-height: 60vh;
+  }
+  .bannert .slidert {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+  }
+  .bannert .slidert .itemt {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(180px);
+  }
+  .bannert .content {
+    padding-bottom: 50px;
+  }
+  .bannert .content .modelt {
+    height: 20vh;
+  }
+}

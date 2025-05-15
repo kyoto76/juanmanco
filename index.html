@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <title>JMPLUS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/final.css">
+    <link rel="stylesheet" href="css/wsp.css">
+    <link rel="stylesheet" href="css/dragon-carousel.css">
+    <link rel="stylesheet" href="css/fouter.css">
+    <link rel="stylesheet" href="css/buutt.css">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://wa.link/3pi29g" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  
+  <header data-aos="fade-down" data-aos-duration="2000">
+    <h1><img src="image/logonombre.png" alt="JMPLUS Logo"><span style="color: #000000;">JM</span>PLUS</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#arma">Arma tu combo</a>
+    </nav>
+    
+    <!-- Menú hamburguesa para móviles -->
+    <div class="hamburger-menu" id="hamburger-menu" aria-label="Menú de navegación" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <!-- Navegación móvil -->
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#arma">Arma tu combo</a>
+    </div>
+  </header>
+
+  <section>
+    <!-- carousel -->
+    <div class="carousel">
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/netflix.mp4" type="video/mp4">
+          </video>
+
+          <div class="content">
+            <h1>Cuentas de Netflix</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Disfruta de tus series y películas favoritas con total confianza. Ofrecemos cuentas de Netflix de alta calidad, garantizadas y a los mejores precios del mercado. Con nosotros, tienes acceso seguro y estable al contenido que amas, sin complicaciones ni sorpresas.</h4>                            
+                <div class="buttons">
+                  <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+
+                 
+                </div>
+              </div>
+              <div class="vid-box">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jatKwzX69Uc?si=KXXWWQLT1KRpGM4e&autoplay=0&loop=1&playlist=jatKwzX69Uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/spotify.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>Cuentas de Spotify</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Accede a música sin límites con total tranquilidad. Te ofrecemos cuentas de Spotify premium 100% funcionales, con excelente calidad y al mejor precio. Disfruta de tus playlists, podcasts y artistas favoritos sin anuncios y con la confianza de un servicio seguro y estable.</h4>                            
+                <div class="buttons">
+                  <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+                </div>
+              </div>
+              <div class="vid-box">
+                <iframe class="responsive-iframe" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbvPjXfc8G9S?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/dinseyvideo.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>Cuentas de Disney</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Sumérgete en la magia de Disney+ con total seguridad. Ofrecemos cuentas premium con acceso garantizado a todo el catálogo: Disney, Pixar, Marvel, Star Wars y más. Calidad, confianza y el mejor precio para que disfrutes en familia o por tu cuenta, sin interrupciones.</h4>                            
+                <div class="buttons">
+                  <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+                </div>
+              </div>
+              <div class="vid-box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9KVG_X_7Naw?si=Dyaju-URYrn7Se12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/Crunchyrollvideo.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>Cuentas de Crunchyroll</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Disfruta del mejor anime con acceso ilimitado. Ofrecemos cuentas premium de Crunchyroll para que puedas ver tus series y películas favoritas en alta calidad. Con la mejor confiabilidad y a un precio accesible, vive la experiencia del anime sin interrupciones ni anuncios.</h4>                            
+                <div class="buttons">
+                  <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/MAXvideo.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>Cuentas de MAX</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Accede al mejor contenido exclusivo con MAX. Te ofrecemos cuentas premium para disfrutar de tus series, películas y documentales favoritos en alta calidad. Confiabilidad y el mejor precio para que vivas una experiencia de entretenimiento sin límites.</h4>                            
+                <div class="buttons">
+                 <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+                </div>
+              </div>
+              <div class="vid-box">
+                <video controls id="vid" class="vid-trailer" src="video/squid game.mp4" type="video/mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <video class="fullscreen-video" muted autoplay loop>
+            <source src="video/mas.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>MAS</h1>
+            <div class="details">
+              <p>Confianza</p>
+              <p>Calidad</p>
+              <p>Mejores precios</p>
+            </div>
+            <div class="content-main">
+              <div class="content-text">
+                <h4>Accede al mejor entretenimiento con nuestras cuentas de streaming. Ofrecemos acceso premium a las plataformas más populares como Netflix, Spotify, Disney+, Crunchyroll, MAX y más, con la mejor calidad y al precio más competitivo. Disfruta de tus series, películas, música y anime favoritos sin interrupciones ni anuncios, con total confianza y seguridad.</h4>                            
+                <div class="buttons">
+                   <button class="download-btn" onclick="document.querySelector('.wrapper').scrollIntoView({behavior: 'smooth'})">Catálogo</button>
+                 <button class="trailer-btn" onclick="window.location.href='https://wa.link/3pi29g'">Contáctanos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="image/1.webp" alt="Squid Game Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              Netflix
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/2.webp" alt="One Piece Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              Spotify
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/3.webp" alt="Shogun Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              Dinsey
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/4.webp" alt="Demon Slayer Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              Crunchyroll 
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/5.webp" alt="Game of Thrones Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              MAX
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/mas1.jpeg" alt="Jujutsu Kaisen Thumbnail">
+          <div class="thum-content">
+            <div class="title">
+              MAS
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <!-- time running -->
+      <div class="time"></div>
+    </div>
+  </section>
+
+  <section class="catalago" id="catalogo">
+    <div class="wrapper">
+      <header class="header-mobile">
+        <h1 class="logo">Catálogo</h1>
+        <button class="open-menu" id="open-menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </header>
+      <aside>
+        <button class="close-menu" id="close-menu">
+          <i class="bi bi-x"></i>
+        </button>
+        <header>
+          <h1 class="logo">Catálogo</h1>
+        </header>
+        <nav>
+          <ul class="menu">
+            <li>
+              <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+            </li>
+            <li>
+              <button id="netflix" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Netflix</button>
+            </li>
+            <li>
+              <button id="spotify" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Spotify</button>
+            </li>
+            <li>
+              <button id="disney" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Disney</button>
+            </li>
+            <li>
+              <button id="max" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> MAX</button>
+            </li>
+            <li>
+              <button id="youtube" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> YouTube</button>
+            </li>
+            <li>
+              <button id="crunchyroll" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Crunchyroll</button>
+            </li>
+            <li>
+              <button id="chatgpt" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> MAS</button>
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p class="texto-footer">© 2025 JMPLUS</p>
+        </footer>
+      </aside>
+      <main>
+        <!-- Menú de categorías móvil -->
+        <div class="mobile-category-menu">
+          <button class="mobile-category-toggle">
+            <span id="current-category">Todos los productos</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="mobile-category-dropdown">
+            <button data-category="todos" class="mobile-category-item active">Todos los productos</button>
+            <button data-category="netflix" class="mobile-category-item">Netflix</button>
+            <button data-category="spotify" class="mobile-category-item">Spotify</button>
+            <button data-category="disney" class="mobile-category-item">Disney</button>
+            <button data-category="max" class="mobile-category-item">MAX</button>
+            <button data-category="youtube" class="mobile-category-item">YouTube</button>
+            <button data-category="crunchyroll" class="mobile-category-item">Crunchyroll</button>
+            <button data-category="chatgpt" class="mobile-category-item">MAS</button>
+          </div>
+        </div>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Sección del Carrusel de Dragones -->
+<section class="dragon-section" id="arma">
+    <div class="bannert">
+        <div class="slidert" style="--quantity: 10">
+            <div class="itemt" style="--position: 1"><img src="image/1.webp" alt="Dragón 1"></div>
+            <div class="itemt" style="--position: 2"><img src="image/2.webp" alt="Dragón 2"></div>
+            <div class="itemt" style="--position: 3"><img src="image/3.webp" alt="Dragón 3"></div>
+            <div class="itemt" style="--position: 4"><img src="image/4.webp" alt="Dragón 4"></div>
+            <div class="itemt" style="--position: 5"><img src="image/5.webp" alt="Dragón 5"></div>
+            <div class="itemt" style="--position: 6"><img src="image/6.webp" alt="Dragón 6"></div>
+            <div class="itemt" style="--position: 7"><img src="image/7.jpg" alt="Dragón 7"></div>
+            <div class="itemt" style="--position: 8"><img src="image/8.jpeg" alt="Dragón 8"></div>
+            <div class="itemt" style="--position: 9"><img src="image/9.jpeg" alt="Dragón 9"></div>
+            <div class="itemt" style="--position: 10"><img src="image/10.jpeg" alt="Dragón 10"></div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <a href="https://wa.link/3pi29g" class="button-borders"> 
+            <button class="primary-button"> ARMA TU COMBO </button>
+        </a>
+    </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>JMPLUS</h3>
+        <p>Tu proveedor confiable de cuentas premium para todas las plataformas de streaming.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61570466978660" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jmplusss/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.link/3pi29g" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#arma">Arma tu Conbo</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Plataformas</h3>
+        <ul>
+          <li><a href="#catalogo">Netflix</a></li>
+          <li><a href="#catalogo">Spotify</a></li>
+          <li><a href="#catalogo">Disney+</a></li>
+          <li><a href="#catalogo">MAX</a></li>
+          <li><a href="#catalogo">YouTube</a></li>
+          <li><a href="#catalogo">Crunchyroll</a></li>
+          <li><a href="#catalogo">Mucho Mas</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="bi bi-envelope"></i> cuentasstream211@gmail.com</p>
+        <p><i class="bi bi-telephone"></i> +57 323 3132082</p>
+        <p><i class="bi bi-geo-alt"></i> Medellin, Colombia</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 JMPLUS. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/apps.js"></script>
+  <script src="js/mobile-menu.js"></script>
+</body>
+</html>
